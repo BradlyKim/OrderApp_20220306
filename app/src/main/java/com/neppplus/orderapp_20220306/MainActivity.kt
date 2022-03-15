@@ -22,6 +22,10 @@ class MainActivity : AppCompatActivity() {
         mAdapter = MainViewPagerAdapter(supportFragmentManager)
         mainViewPager.adapter = mAdapter
 
+//        도전 과제로, 3페이지의 뷰페이저로 구현 예정 => 재사용성 무시, 3장의 화면을 모두 메모리에 유지함.
+        mainViewPager.offscreenPageLimit = 3
+
+        mainTabLayout.setupWithViewPager(mainViewPager)
 
     }
 }
