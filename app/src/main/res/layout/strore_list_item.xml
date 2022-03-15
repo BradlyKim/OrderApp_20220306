@@ -26,6 +26,14 @@
             android:textColor="@color/black"
             android:textSize="17sp"/>
 
+        <com.willy.ratingbar.BaseRatingBar
+            app:srb_starHeight="15dp"
+            app:srb_starWidth="15dp"
+            app:srb_starPadding="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
     </LinearLayout>
 
 </LinearLayout>
